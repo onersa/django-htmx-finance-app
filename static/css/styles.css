@@ -7,3 +7,22 @@ nav {
     color: white;
     background-color: #182c34;
 }
+
+.padding-style {
+    padding: 0.5em
+}
+
+.btn-custom {
+    width:10em;
+    background-color: rgb(85, 139, 85);
+    margin-top: 0.5em;
+}
+
+.btn-red {
+    background-color: rgb(210, 66, 66);
+}
+
+.btn-blue {
+    background-color: rgb(98, 98, 156);
+    background-color: rgb(12, 63, 9);
+}

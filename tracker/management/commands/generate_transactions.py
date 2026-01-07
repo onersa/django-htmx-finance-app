@@ -45,7 +45,7 @@ class Command(BaseCommand):
         user = User.objects.filter(username="tshepiso").first()
         
         if not user:
-            user = User.objects.create_superuser(username="tshepiso", password="northWind1")
+            user = User.objects.create_superuser(username="tshepiso", password="****************")
             
         categories = Category.objects.all()
         types = [x[0] for x in Transaction.TRANSACTION_TYPE_CHOICES]

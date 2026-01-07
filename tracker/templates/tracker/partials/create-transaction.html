@@ -1,0 +1,16 @@
+
+<h1 class="mt-8 mb-4 prose prose-2xl text-white">
+                   Create Transaction
+</h1>
+<form hx-post="{% url 'create-transaction'  %}">
+    {% include 'tracker/partials/transaction-form.html' %}
+    <button class="btn btn-success mt-2 btn-custom">
+            Add
+    </button>
+    <button class="btn mt-2 btn-custom  btn-red"
+    hx-get="{% url 'transactions-list' %}"
+    hx-target="#transaction-block"
+    hx-push-url="/transactions">
+            Cancel
+    </button>
+</form>
